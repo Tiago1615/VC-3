@@ -3,8 +3,8 @@
 
 ### Autores
 
-- [@Santiago Santana Martínez](https://github.com/Tiago1615)
 - [@Mauro Gómez Guillén](https://github.com/MGGdesigns)
+- [@Santiago Santana Martínez](https://github.com/Tiago1615)
 
 ## Tabla de Contenidos
 
@@ -12,7 +12,7 @@
 - [Introducción](#introducción)
 - [Tareas](#tareas)
   - [Tarea 1](#tarea-1)
-    - [Detección de Monedas en Tiempo Real](#deteccion-de-monedas-en-tiempo-real)
+    - [Detección de Monedas en Imágenes Estáticas](#detección-de-monedas-en-imágenes-estáticas)
     - [Extra: Demo en vivo](#extra-demo-en-vivo)
     - [Problemas Detectados](#problemas-detectados)
   - [Tarea 2](#tarea-2)
