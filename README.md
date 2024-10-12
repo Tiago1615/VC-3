@@ -16,6 +16,9 @@
     - [Extra: Demo en vivo](#extra-demo-en-vivo)
     - [Problemas Detectados](#problemas-detectados)
   - [Tarea 2](#tarea-2)
+    - [Extracción de Características y Reconocimiento de Partículas](#extracción-de-características-y-reconocimiento-de-partículas)
+    - []()
+    - []()
 - [Referencias Bibliográficas](#referencias-bibliográficas)
 
 ---
@@ -26,6 +29,8 @@
   - `opencv-python`
   - `numpy`
   - `matplotlib`
+  - `seaborn`
+  - `scikit-learn`
 
 ```bash
 pip install opencv-python
@@ -40,7 +45,11 @@ pip install matplotlib
 ```
 
 ```bash
-pip install scikit-learn seaborn
+pip install seaborn
+```
+
+```bash
+pip install scikit-learn
 ```
 
 ## Introducción:
@@ -71,7 +80,6 @@ A partir de una imagen con monedas no solapadas, identificar interactivamente (h
 - El sistema dibuja círculos sobre las monedas detectadas y calcula el número total de monedas, además de sumar el valor de cada una.
 - Los resultados se muestran en pantalla.
 
-
 #### Problemas Detectados
 
 1. **Relación de Escala Inexacta**: El uso de escalas puede generar errores en la detección precisa de las monedas seleccionadas.
@@ -81,7 +89,25 @@ A partir de una imagen con monedas no solapadas, identificar interactivamente (h
 ---
 
 ### Tarea 2
-A partir de tres imágenes, extraer características geométricas y/o visuales e identificar patrones que permitan distinguir las partículas de cada una de las tres clases. Realizando además, una evaluación de los aciertos y fallos mediante una matriz de confusión.
+El objetivo de esta tarea es extraer características geométricas y/o visuales de tres diferentes clases de imágenes de partículas. Basándonos en estas características, desarrollaremos un clasificador simple para identificar y distinguir entre las partículas de cada clase. Evaluaremos el rendimiento de nuestro clasificador utilizando una matriz de confusión para visualizar los aciertos y fallos.
+
+#### Extracción de Características y Reconocimiento de Partículas
+
+- **Carga y Preprocesamiento de Imágenes**:
+  - Se cargan tres tipos de imágenes: Fragmentos, Pellets y Alquitrán.
+  - Cada imagen se recorta y se normaliza para uniformizar la escala y mejorar la calidad de la detección.
+
+- **Segmentación de Imágenes**:
+  - Se aplica un algoritmo de segmentación para identificar posibles partículas en cada imagen. Utilizamos técnicas como la detección de bordes y umbralización adaptativa para mejorar la precisión.
+
+- **Extracción de Características**:
+  - Para cada partícula identificada, calculamos características como el área, perímetro, compacidad y relación de aspecto.
+
+- **Clasificación**:
+  - Utilizamos las características extraídas para clasificar cada partícula en una de las tres categorías utilizando reglas simples basadas en las propiedades geométricas.
+
+- **Evaluación**:
+  - Construimos una matriz de confusión para evaluar cuántas partículas de cada tipo fueron correctamente identificadas versus mal clasificadas.
 
 ---
 
@@ -92,4 +118,3 @@ A partir de tres imágenes, extraer características geométricas y/o visuales e
 - [OpenCV flags para dibujar contornos](https://docs.opencv.org/4.x/d3/dc0/group__imgproc__shape.html#ga819779b9857cc2f8601e6526a3a5bc71)
 
 ---
-
