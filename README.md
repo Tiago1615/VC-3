@@ -17,8 +17,11 @@
     - [Problemas Detectados](#problemas-detectados)
   - [Tarea 2](#tarea-2)
     - [Extracción de Características y Reconocimiento de Partículas](#extracción-de-características-y-reconocimiento-de-partículas)
-    - []()
-    - []()
+    - [Carga y Preprocesamiento de Imágenes](#carga-y-preprocesamiento-de-imágenes)
+    - [Segmentación de Imágenes](#segmentación-de-imágenes)
+    - [Extracción de Características](#extracción-de-características)
+    - [Clasificación](#clasificación)
+    - [Evaluación](#evaluación)
 - [Referencias Bibliográficas](#referencias-bibliográficas)
 
 ---
@@ -73,12 +76,16 @@ A partir de una imagen con monedas no solapadas, identificar interactivamente (h
   - Detecta y cuenta el resto de las monedas.
   - Muestra el número total de monedas y el valor acumulado.
 
+![image](https://github.com/user-attachments/assets/00ba4777-2961-4177-9e5a-2e54a1da1351)
+
 #### Extra: Demo en vivo
 
 - El sistema captura el video desde la cámara en tiempo real y, al presionar la tecla **'1'**, se congela el cuadro para procesarlo.
 - Se realiza el mismo procesamiento de imagen (escala de grises, suavizado, bordes y Hough) para identificar monedas.
 - El sistema dibuja círculos sobre las monedas detectadas y calcula el número total de monedas, además de sumar el valor de cada una.
 - Los resultados se muestran en pantalla.
+
+![image](https://github.com/user-attachments/assets/8421fb2f-a344-4768-a3fb-c7c4bcf44d4b)
 
 #### Problemas Detectados
 
@@ -108,6 +115,7 @@ El objetivo de esta tarea es extraer características geométricas y/o visuales 
 
 - **Evaluación**:
   - Construimos una matriz de confusión para evaluar cuántas partículas de cada tipo fueron correctamente identificadas versus mal clasificadas.
+  - ![image](https://github.com/user-attachments/assets/30be2841-acfa-42b5-aa26-17f73eab524d)
 
 ---
 
